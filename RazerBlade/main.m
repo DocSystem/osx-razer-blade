@@ -3,6 +3,7 @@
 //  RazerBlade
 //
 //  Created by Kishor Prins on 2017-04-12.
+//  Edited by Antoine Souben on 2020-04-17.
 //  Copyright © 2017 Kishor Prins. All rights reserved.
 //
 
@@ -87,7 +88,7 @@ int main(int argc, const char * argv[]) {
                 
             }
             
-            razer_attr_write_mode_breath(dev, "1", 1);
+            razer_attr_write_mode_static(dev, "FFFFFF", 3);
             
             //Close this device and release object
             kr = (*dev)->USBDeviceClose(dev);

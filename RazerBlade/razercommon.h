@@ -25,27 +25,29 @@
 #define OFF 0x00
 #define ON  0x01
 
+// LED STORAGE Options
+#define NOSTORE          0x00
+#define VARSTORE         0x01
+
 // LED definitions
+#define ZERO_LED          0x00
 #define SCROLL_WHEEL_LED  0x01
 #define BATTERY_LED       0x03
 #define LOGO_LED          0x04
 #define BACKLIGHT_LED     0x05
 #define MACRO_LED         0x07
 #define GAME_LED          0x08
-#define RED_PROFILE_LED   0x0E
-#define GREEN_PROFILE_LED 0x0C
-#define BLUE_PROFILE_LED  0x0D
-
-// LED STORAGE Options
-#define NOSTORE          0x00
-#define VARSTORE         0x01
+#define RED_PROFILE_LED   0x0C
+#define GREEN_PROFILE_LED 0x0D
+#define BLUE_PROFILE_LED  0x0E
+#define RIGHT_SIDE_LED    0x10
+#define LEFT_SIDE_LED     0x11
 
 // LED Effect definitions
 #define LED_STATIC           0x00
 #define LED_BLINKING         0x01
 #define LED_PULSATING        0x02
 #define LED_SPECTRUM_CYCLING 0x04
-
 
 // Report Responses
 #define RAZER_CMD_BUSY          0x01
